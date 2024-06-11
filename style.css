@@ -1,13 +1,15 @@
 *{
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .navbar{
-    background: crimson;
+    background: #080D26 ;
     font-family: 'calibri';
     padding-right: 15px;
     padding-left: 15px;
-    border-radius: 50px;
+    border-radius: 21px;
+    padding: 15px;
 }
 
 .navdiv{
@@ -34,3 +36,44 @@ li a{
     font-weight: bold;
     margin-right: 25px;
 }
+
+.container{
+    
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: #fff;
+    text-align: centre;
+   
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+h2{
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images{
+
+    float: left;
+    width: 25%;
+    padding: 3px;
+    font-family: 'Poppins', sans-serif;
+}
+
