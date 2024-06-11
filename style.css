@@ -53,18 +53,23 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 p{
     text-transform: capitalize;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.2rem;
+    color: #666;
 }
 
 h3{
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     display: flex;
+    font-size: 1.1rem;
     justify-content: center;
     align-items: center;
 }
