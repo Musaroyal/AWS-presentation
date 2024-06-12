@@ -16,6 +16,14 @@ p {
     color: #666;
 }
 
+nav ul li a:hover, nav ul li a.active {
+    background: white;
+    color: #080D26;
+    transition: .5s;
+    border-radius: 25px;
+    padding: 5px;
+}
+
 .container {
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
@@ -27,12 +35,14 @@ p {
 }
 
 .navbar{
-    background: #080D26 ;
-    font-family: 'calibri';
-    padding-right: 15px;
-    padding-left: 15px;
-    border-radius: 21px;
+    background: #080D26;
     padding: 15px;
+    border-radius: 21px;
+    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
 }
 
 .navdiv{

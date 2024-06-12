@@ -7,6 +7,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="navbar">
         <input type="checkbox" id="check"/>
@@ -16,13 +17,34 @@
         <div class="navdiv">
             <div class="logo"><a href="index.html">AWS Cohort 3</a></div>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="testimonial.html">Testimonial</a></li>
+                <li><a href="slide.html">Testimonial</a></li>
             </ul>
         </div>
     </nav>
+    <div class="team">
+        <h2>our prospective team</h2>
+        <p>Introducing the team & their roles</p>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://via.placeholder.com/800x400" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="https://via.placeholder.com/800x400" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="https://via.placeholder.com/800x400" alt="Slide 3">
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
     <div class="container">
+
+        
         <h2>Welcome to AWS Cohort Achievements</h2>
         <p>Join Us In Celebrating Our Journey Of Learning And Certification In AWS Cloud.</p>
     </div>
@@ -61,4 +83,24 @@
 </footer>
 
 </body>
+<script>
+     let currentIndex = 0;
+
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    currentIndex += direction;
+
+    if (currentIndex >= totalSlides) {
+        currentIndex = 0;
+    } else if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
+    }
+
+    const slider = document.querySelector('.slider');
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+
+</script>
 </html>
