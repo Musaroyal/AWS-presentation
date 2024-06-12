@@ -133,8 +133,8 @@ nav ul li a:hover, nav ul li a.active {
     background: #fff;
     text-align: center;
     margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
+    width: 35%;
+    border-radius: 50px;
 }
 
 h2 {
@@ -217,8 +217,8 @@ nav ul li a:hover, nav ul li a.active {
 
 
 .slider-container {
-    position: relative;
-    max-width: 2200px;
+  
+    max-width: 1200px;
     margin: auto;
     overflow: hidden;
     border-radius: 80px;
