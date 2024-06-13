@@ -19,63 +19,82 @@
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="slide.html">Testimonial</a></li>
+                <li><a href="testimonial.html">Testimonial</a></li>
             </ul>
         </div>
     </nav>
-    <div class="team">
+    <div class="container">
         <h2>our prospective team</h2>
         <p>Introducing the team & their roles</p>
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide">
-                    <img src="images/ginna.jpg" alt="Slide 1">
-                </div>
-                <div class="slide">
-                    <img src="images/nosipho.jpg" alt="Slide 2">
-                </div>
-                <div class="slide">
-                    <img src="images/mutshax.jpg" alt="Slide 3">
-                </div>
-                <div class="slide">
-                    <img src="images/tshego.jpg" alt="Slide 3">
-                </div>
-                <div class="slide">
-                    <img src="images/zandi.jpg" alt="Slide 3">
-                </div>
-                <div class="slide">
-                    <img src="images/mutshax.jpg" alt="Slide 3">
-                </div>
-                <div class="slide">
-                    <img src="images/mutshax.jpg" alt="Slide 3">
-                </div>
-                <div class="slide">
-                    <img src="images/mutshax.jpg" alt="Slide 3">
-                </div>
-                <div class="slide">
-                    <img src="images/mutshax.jpg" alt="Slide 3">
-                </div>
-                <div class="slide">
-                    <img src="images/mutshax.jpg" alt="Slide 3">
-                </div>
-                <div class="slide">
-                    <img src="images/mutshax.jpg" alt="Slide 3">
-                </div>
-            </div>
-            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <div class="team-container">
+        <div class="team-member">
+            <img src="images/andries.jpg" alt="Team Member 1">
+            <p class="team-name">Andries Matenjwa | AWS Junior developer</p>
+            <div class="overlay">Additional Info about Team Member 1</div>
+        </div>
+        <div class="team-member">
+            <img src="images/thobile.jpg" alt="Team Member 2">
+            <p class="team-name">Thobile Twala | AWS Junior Solutions architect</p>
+            <div class="overlay">Additional Info about Team Member 2</div>
+        </div>
+        <div class="team-member">
+            <img src="images/ginna.jpg" alt="Team Member 3">
+            <p class="team-name">Ginna Seerane | AWS Junior Data Engineer</p>
+            <div class="overlay">Additional Info about Team Member 3</div>
+        </div>
+        <div class="team-member">
+            <img src="images/kgodiso.jpg" alt="Team Member 4">
+            <p class="team-name">Kgodiso Mphahlele | AWS Junior Solutions Architect</p>
+            <div class="overlay">Additional Info about Team Member 4</div>
+        </div>
+        <div class="team-member">
+            <img src="images/humprey.jpg" alt="Team Member 5">
+            <p class="team-name">Humprey Manaka | AWS Junior Solutions Architect (Business Development Executive)</p>
+            <div class="overlay">Additional Info about Team Member 5</div>
+        </div>
+        <div class="team-member">
+            <img src="images/reggie.jpg" alt="Team Member 6">
+            <p class="team-name">Reginald Khumalo | AWS Junior Solutions architect (Business Development Executive)</p>
+            <div class="overlay">Additional Info about Team Member 6</div>
+        </div>
+        <div class="team-member">
+            <img src="images/musa.jpg" alt="Team Member 7">
+            <p class="team-name">Musa Mavasa |Junior AWS Developer</p>
+            <div class="overlay">Additional Info about Team Member 7</div>
+        </div>
+        <div class="team-member">
+            <img src="images/nosipho.jpg" alt="Team Member 8">
+            <p class="team-name">Nosipho Mncwango | Junior AWS Solutions architect</p>
+            <div class="overlay">Additional Info about Team Member 8</div>
+        </div>
+        <div class="team-member">
+            <img src="images/tshego.jpg" alt="Team Member 9">
+            <p class="team-name">Tshegofatso Letswalo | Junior AWS Developer</p>
+            <div class="overlay">Additional Info about Team Member 9</div>
+        </div>
+        <div class="team-member">
+            <img src="images/mutshax.jpg" alt="Team Member 10">
+            <p class="team-name">Mutsharini Rembuluwani | Junior AWS Solutions architect</p>
+            <div class="overlay">Additional Info about Team Member 10</div>
+        </div>
+        <div class="team-member">
+            <img src="images/zandi.jpg" alt="Team Member 11">
+            <p class="team-name">Zandile Mngomezulu | Junior AWS Solutions architect</p>
+            <div class="overlay">Additional Info about Team Member 11</div>
         </div>
     </div>
+    
+
     <div class="container">
 
         
-        <h2>Welcome to AWS Cohort Achievements</h2>
+        <h2>Team's Achievements</h2>
         <p>Join Us In Celebrating Our Journey Of Learning And Certification In AWS Cloud.</p>
     </div>
 
-    <div class="certifications">
-        <h3>Cohort's Achievements</h3>
-    </div>
+   
 
     <div class="row">
         <div class="images">
@@ -107,24 +126,5 @@
 </footer>
 
 </body>
-<script>
-     let currentIndex = 0;
 
-function changeSlide(direction) {
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
-    currentIndex += direction;
-
-    if (currentIndex >= totalSlides) {
-        currentIndex = 0;
-    } else if (currentIndex < 0) {
-        currentIndex = totalSlides - 1;
-    }
-
-    const slider = document.querySelector('.slider');
-    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-
-</script>
 </html>
